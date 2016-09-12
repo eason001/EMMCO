@@ -1,0 +1,13 @@
+INFO: Total execution time: 2039122ms
+pop_size = 100
+n_gen = 100
+mutation_prob = 0.4
+n_obj = 1 (RTT)
+no constraints
+n_runs = 5
+sim_runs per evaluation = 3
+INF ACT
+ACK ACT
+distance = 30
+reference point = 4000
+RTOs: 153; 169; 166; 154

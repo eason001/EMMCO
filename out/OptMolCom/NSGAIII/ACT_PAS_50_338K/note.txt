@@ -1,0 +1,2 @@
+AVG HV is: 0.9381218200000002
+INFO: Total execution time: 96247332ms

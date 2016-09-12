@@ -1,0 +1,7 @@
+Jan 21, 2016 8:01:38 PM jmetal.problems.OptMolCom.NSGAII_main main
+INFO: Total execution time: 4926919ms
+Jan 21, 2016 8:01:38 PM jmetal.problems.OptMolCom.NSGAII_main main
+INFO: Variables values have been writen to file VAR
+Jan 21, 2016 8:01:38 PM jmetal.problems.OptMolCom.NSGAII_main main
+INFO: Objectives values have been writen to file FUN
+AVG HV is: 0.04629191666666667

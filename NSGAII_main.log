@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2016-03-15T18:55:26</date>
+  <millis>1458082526651</millis>
+  <sequence>0</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-15T18:55:26</date>
+  <millis>1458082526673</millis>
+  <sequence>1</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-15T18:55:26</date>
+  <millis>1458082526675</millis>
+  <sequence>2</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-16T00:22:30</date>
+  <millis>1458102150760</millis>
+  <sequence>3</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-16T00:22:30</date>
+  <millis>1458102150762</millis>
+  <sequence>4</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-16T00:22:30</date>
+  <millis>1458102150763</millis>
+  <sequence>5</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-16T03:13:01</date>
+  <millis>1458112381534</millis>
+  <sequence>6</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-16T03:13:01</date>
+  <millis>1458112381537</millis>
+  <sequence>7</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-16T03:13:01</date>
+  <millis>1458112381537</millis>
+  <sequence>8</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-16T05:14:55</date>
+  <millis>1458119695345</millis>
+  <sequence>9</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-16T05:14:55</date>
+  <millis>1458119695346</millis>
+  <sequence>10</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-16T05:14:55</date>
+  <millis>1458119695346</millis>
+  <sequence>11</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-16T19:08:47</date>
+  <millis>1458169727470</millis>
+  <sequence>12</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time: 103450991ms</message>
+</record>
+<record>
+  <date>2016-03-16T19:08:47</date>
+  <millis>1458169727472</millis>
+  <sequence>13</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Variables values have been writen to file VAR</message>
+</record>
+<record>
+  <date>2016-03-16T19:08:47</date>
+  <millis>1458169727478</millis>
+  <sequence>14</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Objectives values have been writen to file FUN</message>
+</record>
+<record>
+  <date>2016-03-16T19:08:47</date>
+  <millis>1458169727481</millis>
+  <sequence>15</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Quality indicators</message>
+</record>
+<record>
+  <date>2016-03-16T19:08:47</date>
+  <millis>1458169727484</millis>
+  <sequence>16</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Hypervolume: 0.971413525</message>
+</record>
+<record>
+  <date>2016-03-16T19:08:47</date>
+  <millis>1458169727506</millis>
+  <sequence>17</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>GD         : 0.13741064573303632</message>
+</record>
+<record>
+  <date>2016-03-16T19:08:47</date>
+  <millis>1458169727508</millis>
+  <sequence>18</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>IGD        : 0.6949832177919838</message>
+</record>
+<record>
+  <date>2016-03-16T19:08:47</date>
+  <millis>1458169727539</millis>
+  <sequence>19</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Spread     : 1.0003117756782303</message>
+</record>
+<record>
+  <date>2016-03-16T19:08:47</date>
+  <millis>1458169727549</millis>
+  <sequence>20</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Epsilon    : 4741.0</message>
+</record>
+<record>
+  <date>2016-03-16T19:08:47</date>
+  <millis>1458169727551</millis>
+  <sequence>21</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Speed      : 0 evaluations</message>
+</record>
+<record>
+  <date>2016-03-16T19:33:06</date>
+  <millis>1458171186984</millis>
+  <sequence>22</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-16T19:33:06</date>
+  <millis>1458171186984</millis>
+  <sequence>23</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-16T19:33:06</date>
+  <millis>1458171186985</millis>
+  <sequence>24</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-16T20:02:36</date>
+  <millis>1458172956931</millis>
+  <sequence>25</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-16T20:02:36</date>
+  <millis>1458172956933</millis>
+  <sequence>26</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-16T20:02:36</date>
+  <millis>1458172956934</millis>
+  <sequence>27</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-16T20:51:10</date>
+  <millis>1458175870464</millis>
+  <sequence>28</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-16T20:51:10</date>
+  <millis>1458175870466</millis>
+  <sequence>29</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-16T20:51:10</date>
+  <millis>1458175870467</millis>
+  <sequence>30</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-16T23:21:56</date>
+  <millis>1458184916477</millis>
+  <sequence>31</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-16T23:21:56</date>
+  <millis>1458184916478</millis>
+  <sequence>32</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-16T23:21:56</date>
+  <millis>1458184916479</millis>
+  <sequence>33</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-16T23:38:05</date>
+  <millis>1458185885088</millis>
+  <sequence>34</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-16T23:38:05</date>
+  <millis>1458185885089</millis>
+  <sequence>35</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-16T23:38:05</date>
+  <millis>1458185885089</millis>
+  <sequence>36</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-17T01:53:48</date>
+  <millis>1458194028689</millis>
+  <sequence>37</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-17T01:53:48</date>
+  <millis>1458194028690</millis>
+  <sequence>38</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-17T01:53:48</date>
+  <millis>1458194028690</millis>
+  <sequence>39</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-17T15:24:12</date>
+  <millis>1458242652887</millis>
+  <sequence>40</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-17T15:24:12</date>
+  <millis>1458242652888</millis>
+  <sequence>41</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-17T15:24:12</date>
+  <millis>1458242652889</millis>
+  <sequence>42</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-17T16:48:15</date>
+  <millis>1458247695173</millis>
+  <sequence>43</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-17T16:48:15</date>
+  <millis>1458247695174</millis>
+  <sequence>44</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-17T16:48:15</date>
+  <millis>1458247695174</millis>
+  <sequence>45</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-17T19:42:21</date>
+  <millis>1458258141898</millis>
+  <sequence>46</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-17T19:42:21</date>
+  <millis>1458258141899</millis>
+  <sequence>47</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-17T19:42:21</date>
+  <millis>1458258141900</millis>
+  <sequence>48</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-17T20:51:45</date>
+  <millis>1458262305524</millis>
+  <sequence>49</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-17T20:51:45</date>
+  <millis>1458262305526</millis>
+  <sequence>50</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-17T20:51:45</date>
+  <millis>1458262305526</millis>
+  <sequence>51</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-17T23:46:04</date>
+  <millis>1458272764171</millis>
+  <sequence>52</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time: 103036619ms</message>
+</record>
+<record>
+  <date>2016-03-17T23:46:04</date>
+  <millis>1458272764172</millis>
+  <sequence>53</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Variables values have been writen to file VAR</message>
+</record>
+<record>
+  <date>2016-03-17T23:46:04</date>
+  <millis>1458272764175</millis>
+  <sequence>54</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Objectives values have been writen to file FUN</message>
+</record>
+<record>
+  <date>2016-03-17T23:46:04</date>
+  <millis>1458272764177</millis>
+  <sequence>55</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Quality indicators</message>
+</record>
+<record>
+  <date>2016-03-17T23:46:04</date>
+  <millis>1458272764178</millis>
+  <sequence>56</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Hypervolume: 0.9696275</message>
+</record>
+<record>
+  <date>2016-03-17T23:46:04</date>
+  <millis>1458272764179</millis>
+  <sequence>57</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>GD         : 0.13734428856355843</message>
+</record>
+<record>
+  <date>2016-03-17T23:46:04</date>
+  <millis>1458272764180</millis>
+  <sequence>58</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>IGD        : 0.6949746729602814</message>
+</record>
+<record>
+  <date>2016-03-17T23:46:04</date>
+  <millis>1458272764180</millis>
+  <sequence>59</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Spread     : 1.0001237539907</message>
+</record>
+<record>
+  <date>2016-03-17T23:46:04</date>
+  <millis>1458272764181</millis>
+  <sequence>60</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Epsilon    : 5100.0</message>
+</record>
+<record>
+  <date>2016-03-17T23:46:04</date>
+  <millis>1458272764181</millis>
+  <sequence>61</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Speed      : 0 evaluations</message>
+</record>
+<record>
+  <date>2016-03-18T05:21:48</date>
+  <millis>1458292908659</millis>
+  <sequence>62</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-18T05:21:48</date>
+  <millis>1458292908686</millis>
+  <sequence>63</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-18T05:21:48</date>
+  <millis>1458292908687</millis>
+  <sequence>64</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-18T05:55:45</date>
+  <millis>1458294945295</millis>
+  <sequence>65</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-18T05:55:45</date>
+  <millis>1458294945296</millis>
+  <sequence>66</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-18T05:55:45</date>
+  <millis>1458294945296</millis>
+  <sequence>67</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-18T07:04:02</date>
+  <millis>1458299042216</millis>
+  <sequence>68</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-18T07:04:02</date>
+  <millis>1458299042218</millis>
+  <sequence>69</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-18T07:04:02</date>
+  <millis>1458299042220</millis>
+  <sequence>70</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-18T11:02:46</date>
+  <millis>1458313366276</millis>
+  <sequence>71</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-18T11:02:46</date>
+  <millis>1458313366277</millis>
+  <sequence>72</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-18T11:02:46</date>
+  <millis>1458313366278</millis>
+  <sequence>73</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-18T18:47:42</date>
+  <millis>1458341262449</millis>
+  <sequence>74</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-18T18:47:42</date>
+  <millis>1458341262450</millis>
+  <sequence>75</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-18T18:47:42</date>
+  <millis>1458341262450</millis>
+  <sequence>76</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-18T20:12:48</date>
+  <millis>1458346368101</millis>
+  <sequence>77</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-18T20:12:48</date>
+  <millis>1458346368102</millis>
+  <sequence>78</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-18T20:12:48</date>
+  <millis>1458346368103</millis>
+  <sequence>79</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-18T23:06:47</date>
+  <millis>1458356807163</millis>
+  <sequence>80</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-18T23:06:47</date>
+  <millis>1458356807164</millis>
+  <sequence>81</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-18T23:06:47</date>
+  <millis>1458356807164</millis>
+  <sequence>82</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-19T00:32:57</date>
+  <millis>1458361977276</millis>
+  <sequence>83</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>The population is full</message>
+</record>
+<record>
+  <date>2016-03-19T00:32:57</date>
+  <millis>1458361977277</millis>
+  <sequence>84</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>Capacity is : 50</message>
+</record>
+<record>
+  <date>2016-03-19T00:32:57</date>
+  <millis>1458361977277</millis>
+  <sequence>85</sequence>
+  <logger>jMetal</logger>
+  <level>SEVERE</level>
+  <class>jmetal.core.SolutionSet</class>
+  <method>add</method>
+  <thread>1</thread>
+  <message>	 Size is: 50</message>
+</record>
+<record>
+  <date>2016-03-19T04:18:07</date>
+  <millis>1458375487019</millis>
+  <sequence>86</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time: 102722838ms</message>
+</record>
+<record>
+  <date>2016-03-19T04:18:07</date>
+  <millis>1458375487020</millis>
+  <sequence>87</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Variables values have been writen to file VAR</message>
+</record>
+<record>
+  <date>2016-03-19T04:18:07</date>
+  <millis>1458375487035</millis>
+  <sequence>88</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Objectives values have been writen to file FUN</message>
+</record>
+<record>
+  <date>2016-03-19T04:18:07</date>
+  <millis>1458375487038</millis>
+  <sequence>89</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Quality indicators</message>
+</record>
+<record>
+  <date>2016-03-19T04:18:07</date>
+  <millis>1458375487039</millis>
+  <sequence>90</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Hypervolume: 0.9700006250000001</message>
+</record>
+<record>
+  <date>2016-03-19T04:18:07</date>
+  <millis>1458375487039</millis>
+  <sequence>91</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>GD         : 0.1373843377912854</message>
+</record>
+<record>
+  <date>2016-03-19T04:18:07</date>
+  <millis>1458375487039</millis>
+  <sequence>92</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>IGD        : 0.6950044143789664</message>
+</record>
+<record>
+  <date>2016-03-19T04:18:07</date>
+  <millis>1458375487040</millis>
+  <sequence>93</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Spread     : 1.0001215557719636</message>
+</record>
+<record>
+  <date>2016-03-19T04:18:07</date>
+  <millis>1458375487040</millis>
+  <sequence>94</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Epsilon    : 5025.0</message>
+</record>
+<record>
+  <date>2016-03-19T04:18:07</date>
+  <millis>1458375487040</millis>
+  <sequence>95</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.NSGAIII_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Speed      : 0 evaluations</message>
+</record>
+</log>
