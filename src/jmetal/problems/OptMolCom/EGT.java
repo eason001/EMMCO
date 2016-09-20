@@ -112,11 +112,14 @@ public class EGT extends Algorithm {
 		selectionOperator = operators_.get("selection");
 
 		// Create the initial solutionSet
+		System.out.println("Creating initial populations");
 		Solution newSolution;
 		for (int j = 0; j < maxPopulations; j++) {
+			System.out.println("  Population " + j );
 			populationList[j]= new SolutionSet(populationSize);
 			Pop_Index = j;
 			for (int i = 0; i < populationSize; i++) {
+				System.out.println("  SolutionSet " + i );
 				newSolution = new Solution(problem_);
 				problem_.evaluate(newSolution);
 				problem_.evaluateConstraints(newSolution);
@@ -125,12 +128,13 @@ public class EGT extends Algorithm {
 				populationList[j].add(newSolution);
 				//AuxPopulation[j].add(newSolution);
 			} //for   
-	   }
+	     }
+		System.out.println("Creating initial populations Done~ ");
 		
 		
 		// Generations 
 		while (evaluations < maxEvaluations) {
-		//	System.out.println(">>>>> GEN: " + evaluations + " <<<<<");
+			System.out.println(">>>>> GEN: " + evaluations + " <<<<<");
 			BWCon = 0;
 			HVlist = new double[maxPopulations];
 			HV = 0;
@@ -224,7 +228,7 @@ public class EGT extends Algorithm {
 				         System.out.println(count + ") " + element + " ");
 				     }
 					*/
-					populationList[j].sort(new CustomComparator());
+				//	populationList[j].sort(new CustomComparator());
 				//	populationList[j].sort(new SolutionComparator());
 					/*System.out.println("============FINAL=============");
 					for(int i=0;i<populationList[j].size();i++){
@@ -296,7 +300,8 @@ public class EGT extends Algorithm {
 		Solution res = pop.get(0);
 		Solution aux = pop.get(0);
 		for(int i=1; i<pop_size; i++){
-			if(pop.get(i).getObjective(0)==aux.getObjective(0)){
+			//if(pop.get(i).getObjective(0)==aux.getObjective(0)){
+			if(pop.get(i)==aux){
 				count++;
 			}else{
 				count=1;
@@ -584,7 +589,7 @@ public class EGT extends Algorithm {
 	
 	
 	public Solution compareTwoObj_HV_NoCons(Solution p1,Solution p2){
-/*
+
 		SolutionSet pop1 = new SolutionSet(1);
 		SolutionSet pop2 = new SolutionSet(1);
 		pop1.add(p1);
@@ -599,16 +604,16 @@ public class EGT extends Algorithm {
 			winPlayer = 2;
 			return p2;
 		}
-*/
+
 //		System.out.println("p1pos: " + p1Pos + " value: " + p1.getObjective(0));
 //		System.out.println("p2pos: " + p2Pos + " value: " + p2.getObjective(0));
-		if (p1.getObjective(0)>=p2.getObjective(0)){
+	/*	if (p1.getObjective(0)>=p2.getObjective(0)){
 			winPlayer = 2;
 			return p2;
 		}else{
 			winPlayer = 1;
 			return p1;
-		}
+		}*/
 	}
 	
 	public static Solution compareThreeObj(Solution p1,Solution p2,int x0,int x1,int x2){

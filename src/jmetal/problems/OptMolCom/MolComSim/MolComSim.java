@@ -57,7 +57,7 @@ public class MolComSim {
 		//yet finished sending our messages, move the simulation forward
 		for(simStep=0; (simStep < simParams.getMaxNumSteps()) && (!lastMsgCompleted); simStep++) 
 		{
-			//System.out.println("steps: " + simStep);
+			System.out.println("steps: " + simStep);
 			for(NanoMachine nm : nanoMachines){
 				nm.nextStep();
 			}
@@ -73,7 +73,7 @@ public class MolComSim {
 	public void startSim2(Map<String,String> args) throws IOException {
 		simStep = 0;
 		lastMsgCompleted = false;
-		simParams = new SimulationParams(args);
+		simParams = new SimulationParams(args); 
 		if((simParams.getOutputFileName() != null) && (!simParams.isBatchRun())) {
 			outputFile = new FileWriter(simParams.getOutputFileName());
 		}

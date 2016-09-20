@@ -78,7 +78,7 @@ public class OptMolCom extends Problem {
 	
 	public int n_objectives = 2;
 	public int n_constraints = 0;	
-	public int n_variables	= 4;
+	public int n_variables	= 5;
 	public int sim_run = 10; // 10
 	
 		//--------------------------------------------------------------------------------//
@@ -118,7 +118,7 @@ public class OptMolCom extends Problem {
     lowerLimit_ = new double[numberOfVariables_];
 
 
-  //# of INFO and ACK molecules 
+  //# of INFO molecules 
     lowerLimit_[0] = 1; 
     upperLimit_[0] = 100; 
   //# of RTx
@@ -132,6 +132,9 @@ public class OptMolCom extends Problem {
     upperLimit_[3] = 2; // PAS ACT
     upperLimit_[3] = 3; // ACT PAS
     upperLimit_[3] = 4; // PAS PAS
+  //# of of ACK molecules 
+    lowerLimit_[4] = 1; 
+    upperLimit_[4] = 100; 
   
    	solutionType_ = new RealSolutionType(this) ;
    	
@@ -200,95 +203,95 @@ PAS ACT = ACT PAS
     	case 1: 
     		switch ((int)str.getValue(3)) {
     		case 1: 
-    			intermediateNodeA = "(-10, 0, 0) 3 (-10, 0, 0) (-10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+    			intermediateNodeA = "(-10, 0, 0) 3 (-10, 0, 0) (-10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
         	case 2: 
-        		intermediateNodeA = "(-10, 0, 0) 3 (-10, 0, 0) (-10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK PASSIVE 0";
+        		intermediateNodeA = "(-10, 0, 0) 3 (-10, 0, 0) (-10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK PASSIVE 0";
         		break;
         	case 3: 
-        		intermediateNodeA = "(-10, 0, 0) 3 (-10, 0, 0) (-10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+        		intermediateNodeA = "(-10, 0, 0) 3 (-10, 0, 0) (-10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
         	case 4: 
-        		intermediateNodeA = "(-10, 0, 0) 3 (-10, 0, 0) (-10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK PASSIVE 0";
+        		intermediateNodeA = "(-10, 0, 0) 3 (-10, 0, 0) (-10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK PASSIVE 0";
         		break;
         	default:
-        		intermediateNodeA = "(-10, 0, 0) 3 (-10, 0, 0) (-10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+        		intermediateNodeA = "(-10, 0, 0) 3 (-10, 0, 0) (-10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
     		}
     		break;
     	case 2: 
     		switch ((int)str.getValue(3)) {
     		case 1: 
-    			intermediateNodeB = "(-5, 0, 0) 3 (-5, 0, 0) (-5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+    			intermediateNodeB = "(-5, 0, 0) 3 (-5, 0, 0) (-5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
         	case 2: 
-        		intermediateNodeB = "(-5, 0, 0) 3 (-5, 0, 0) (-5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK PASSIVE 0";
+        		intermediateNodeB = "(-5, 0, 0) 3 (-5, 0, 0) (-5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK PASSIVE 0";
         		break;
         	case 3: 
-        		intermediateNodeB = "(-5, 0, 0) 3 (-5, 0, 0) (-5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+        		intermediateNodeB = "(-5, 0, 0) 3 (-5, 0, 0) (-5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
         	case 4: 
-        		intermediateNodeB = "(-5, 0, 0) 3 (-5, 0, 0) (-5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK PASSIVE 0";
+        		intermediateNodeB = "(-5, 0, 0) 3 (-5, 0, 0) (-5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK PASSIVE 0";
         		break;
         	default:
-        		intermediateNodeB = "(-5, 0, 0) 3 (-5, 0, 0) (-5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+        		intermediateNodeB = "(-5, 0, 0) 3 (-5, 0, 0) (-5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
     		}
     		break;
     	case 3: 
     		switch ((int)str.getValue(3)) {
     		case 1: 
-    			intermediateNodeC = "(0, 0, 0) 3 (0, 0, 0) (0, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+    			intermediateNodeC = "(0, 0, 0) 3 (0, 0, 0) (0, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
         	case 2: 
-        		intermediateNodeC = "(0, 0, 0) 3 (0, 0, 0) (0, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK PASSIVE 0";
+        		intermediateNodeC = "(0, 0, 0) 3 (0, 0, 0) (0, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK PASSIVE 0";
         		break;
         	case 3: 
-        		intermediateNodeC = "(0, 0, 0) 3 (0, 0, 0) (0, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+        		intermediateNodeC = "(0, 0, 0) 3 (0, 0, 0) (0, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
         	case 4: 
-        		intermediateNodeC = "(0, 0, 0) 3 (0, 0, 0) (0, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK PASSIVE 0";
+        		intermediateNodeC = "(0, 0, 0) 3 (0, 0, 0) (0, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK PASSIVE 0";
         		break;
         	default:
-        		intermediateNodeC = "(0, 0, 0) 3 (0, 0, 0) (0, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+        		intermediateNodeC = "(0, 0, 0) 3 (0, 0, 0) (0, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
     		}
     		break;
     	case 4: 
     		switch ((int)str.getValue(3)) {
     		case 1: 
-    			intermediateNodeD = "(5, 0, 0) 3 (5, 0, 0) (5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+    			intermediateNodeD = "(5, 0, 0) 3 (5, 0, 0) (5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
         	case 2: 
-        		intermediateNodeD = "(5, 0, 0) 3 (5, 0, 0) (5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK PASSIVE 0";
+        		intermediateNodeD = "(5, 0, 0) 3 (5, 0, 0) (5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK PASSIVE 0";
         		break;
         	case 3: 
-        		intermediateNodeD = "(5, 0, 0) 3 (5, 0, 0) (5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+        		intermediateNodeD = "(5, 0, 0) 3 (5, 0, 0) (5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
         	case 4: 
-        		intermediateNodeD = "(5, 0, 0) 3 (5, 0, 0) (5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK PASSIVE 0";
+        		intermediateNodeD = "(5, 0, 0) 3 (5, 0, 0) (5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK PASSIVE 0";
         		break;
         	default:
-        		intermediateNodeD = "(5, 0, 0) 3 (5, 0, 0) (5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+        		intermediateNodeD = "(5, 0, 0) 3 (5, 0, 0) (5, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
     		}
     		break;
     	case 5: 
     		switch ((int)str.getValue(3)) {
     		case 1: 
-    			intermediateNodeE = "(10, 0, 0) 3 (10, 0, 0) (10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+    			intermediateNodeE = "(10, 0, 0) 3 (10, 0, 0) (10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
         	case 2: 
-        		intermediateNodeE = "(10, 0, 0) 3 (10, 0, 0) (10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK PASSIVE 0";
+        		intermediateNodeE = "(10, 0, 0) 3 (10, 0, 0) (10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK PASSIVE 0";
         		break;
         	case 3: 
-        		intermediateNodeE = "(10, 0, 0) 3 (10, 0, 0) (10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+        		intermediateNodeE = "(10, 0, 0) 3 (10, 0, 0) (10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
         	case 4: 
-        		intermediateNodeE = "(10, 0, 0) 3 (10, 0, 0) (10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK PASSIVE 0";
+        		intermediateNodeE = "(10, 0, 0) 3 (10, 0, 0) (10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO PASSIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK PASSIVE 0";
         		break;
         	default:
-        		intermediateNodeE = "(10, 0, 0) 3 (10, 0, 0) (10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(0)) +" ACK ACTIVE 0";
+        		intermediateNodeE = "(10, 0, 0) 3 (10, 0, 0) (10, 0, 0) " + Integer.toString((int)str.getValue(0)) + " INFO ACTIVE 0 "+ Integer.toString((int)str.getValue(4)) +" ACK ACTIVE 0";
         		break;
     		}
     		break;
@@ -310,7 +313,7 @@ PAS ACT = ACT PAS
     			moleculeParamsACKaux = " ACK ACTIVE 0";
         		break;
     		}
-    		moleculeParamsACKaux = Integer.toString((int)str.getValue(0)) + moleculeParamsACKaux;
+    		moleculeParamsACKaux = Integer.toString((int)str.getValue(4)) + moleculeParamsACKaux;
     		break;   		
     	default:
     		retransmitWaitTime = 100;
@@ -460,7 +463,7 @@ PAS ACT = ACT PAS
         System.out.println(mentry.getValue());
      }
 	*/
-	//System.out.println("start evaluating . . .");
+	System.out.println("start evaluating . . .");
     //Calculate 2 objectives 
 	for(int i = 0 ; i < sim_run ; i ++){
 	
@@ -472,6 +475,7 @@ PAS ACT = ACT PAS
 			e.printStackTrace();
 		}
 		if(simStep<=retransmitWaitTime*numRetransmissions){SuccessRate++;}
+		System.out.println("   " + i + " : " + simStep + " steps");
 		RTT += simStep;	
 	}	
 	
@@ -479,10 +483,10 @@ PAS ACT = ACT PAS
 	SuccessRate = SuccessRate / sim_run * 100;
 		
     //END
-	/*
+	
 	System.out.println("RTT: " + RTT);
 	System.out.println("SuccessRate: " + SuccessRate);
-	*/
+	
     solution.setObjective(0,RTT);
   //  solution.setObjective(1,RTT);//Round Trip Time
     solution.setObjective(1,101-SuccessRate); // Failure Rate    
