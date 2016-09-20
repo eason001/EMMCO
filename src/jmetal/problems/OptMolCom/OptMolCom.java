@@ -20,11 +20,9 @@
 package jmetal.problems.OptMolCom;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
+import java.util.Random;
 
 import jmetal.core.Problem;
 import jmetal.core.Solution;
@@ -65,8 +63,9 @@ public class OptMolCom extends Problem {
 	int useAcknowledgements = 1;
 	int decomposing = 0;
 	int numMessages = 1;	
-	int numRetransmissions = 5; // DV
+	int numRetransmissionsINFO = 5; // DV
 	int retransmitWaitTime = 1000; // DV
+	int numRetransmissionsACK = 5; // DV
 	
 	String moleculeParamsINFOaux = " INFO ACTIVE 0"; // DV ACTIVE PASSIVE
 	String moleculeParamsACKaux = " ACK ACTIVE 0"; // DV
@@ -78,8 +77,12 @@ public class OptMolCom extends Problem {
 	
 	public int n_objectives = 2;
 	public int n_constraints = 0;	
-	public int n_variables	= 5;
+	public int n_variables	= 6;
 	public int sim_run = 10; // 10
+	
+	public Random r  = new Random();
+	public int Low;
+	public int High;
 	
 		//--------------------------------------------------------------------------------//
 
@@ -121,12 +124,12 @@ public class OptMolCom extends Problem {
   //# of INFO molecules 
     lowerLimit_[0] = 1; 
     upperLimit_[0] = 100; 
-  //# of RTx
+  //# of RTx INFO
     lowerLimit_[1] = 0;
     upperLimit_[1] = 10;
   //RTx time out 500 1000 1500 2000 
-    lowerLimit_[2] = 1; 
-    upperLimit_[2] = 4;
+    lowerLimit_[2] = 100; 
+    upperLimit_[2] = 1500;
     //PROTOCOL PASSIVE ACTIVE
     lowerLimit_[3] = 1;  //ACT ACT
     upperLimit_[3] = 2; // PAS ACT
@@ -135,6 +138,10 @@ public class OptMolCom extends Problem {
   //# of of ACK molecules 
     lowerLimit_[4] = 1; 
     upperLimit_[4] = 100; 
+  //# of RTx ACK
+    lowerLimit_[5] = 0;
+    upperLimit_[5] = 10;
+
   
    	solutionType_ = new RealSolutionType(this) ;
    	
@@ -161,7 +168,8 @@ public class OptMolCom extends Problem {
 	moleculeParamsINFOaux = moleculeParams + moleculeParamsINFOaux;
 	moleculeParamsACKaux = moleculeParams + moleculeParamsACKaux;
 	
-	numRetransmissions = (int) str.getValue(1);
+	numRetransmissionsINFO = (int) str.getValue(1);
+	numRetransmissionsACK = (int) str.getValue(5);
 /* RTO
 ACT ACT 30 153;169;166;154
 ACT ACT 50 1405;1461;1383;1427
@@ -322,102 +330,28 @@ PAS ACT = ACT PAS
 	
 	switch ((int)str.getValue(3)) {
 		case 1: 
-			switch ((int)str.getValue(2)) {
-	    	case 1: //RTO=2*RTT
-	    		retransmitWaitTime = 153;
-	    		break;
-	    	case 2: //RTO=RTT+0.5*STD
-	    		retransmitWaitTime = 169;
-	    		break;
-	    	case 3: //RTO=RTT+STD
-	    		retransmitWaitTime = 166;
-	    		break;
-	    	case 4: //RTO=RTT+0.33*STD
-	    		retransmitWaitTime = 154;
-	    		break;
-	    	default:
-	    		retransmitWaitTime = 100;
-	    		break;    		
-			}
+			Low = 50;
+			High = 200;		
     		break;
     	case 2: 
-    		switch ((int)str.getValue(2)) {
-        	case 1: //RTO=2*RTT
-        		retransmitWaitTime = 661;
-        		break;
-        	case 2: //RTO=RTT+0.5*STD
-        		retransmitWaitTime = 668;
-        		break;
-        	case 3: //RTO=RTT+STD
-        		retransmitWaitTime = 648;
-        		break;
-        	case 4: //RTO=RTT+0.33*STD
-        		retransmitWaitTime = 646;
-        		break;
-        	default:
-        		retransmitWaitTime = 1000;
-        		break;        		
-    		}
+			Low = 500;
+			High = 1200;
     		break;
     	case 3: 
-    		switch ((int)str.getValue(2)) {
-        	case 1: //RTO=2*RTT
-        		retransmitWaitTime = 661;
-        		break;
-        	case 2: //RTO=RTT+0.5*STD
-        		retransmitWaitTime = 668;
-        		break;
-        	case 3: //RTO=RTT+STD
-        		retransmitWaitTime = 648;
-        		break;
-        	case 4: //RTO=RTT+0.33*STD
-        		retransmitWaitTime = 646;
-        		break;
-        	default:
-        		retransmitWaitTime = 1000;
-        		break;     		
-    		}
+    		Low = 500;
+			High = 1200;
     		break;
     	case 4: 
-    		switch ((int)str.getValue(2)) {
-        	case 1: //RTO=2*RTT
-        		retransmitWaitTime = 1278;
-        		break;
-        	case 2: //RTO=RTT+0.5*STD
-        		retransmitWaitTime = 1186;
-        		break;
-        	case 3: //RTO=RTT+STD
-        		retransmitWaitTime = 1255;
-        		break;
-        	case 4: //RTO=RTT+0.33*STD
-        		retransmitWaitTime = 1259;
-        		break;
-        	default:
-        		retransmitWaitTime = 1000;
-        		break;       		
-    		}
+    		Low = 800;
+			High = 1500;
     		break;
     	default:
-    		switch ((int)str.getValue(2)) {
-        	case 1: //RTO=2*RTT
-        		retransmitWaitTime = 153;
-        		break;
-        	case 2: //RTO=RTT+0.5*STD
-        		retransmitWaitTime = 169;
-        		break;
-        	case 3: //RTO=RTT+STD
-        		retransmitWaitTime = 166;
-        		break;
-        	case 4: //RTO=RTT+0.33*STD
-        		retransmitWaitTime = 154;
-        		break;
-        	default:
-        		retransmitWaitTime = 100;
-        		break;        		
-    		}
+    		Low = 50;
+			High = 200;
     		break;
 	}	
 	
+	retransmitWaitTime = r.nextInt(High-Low) + Low;
 	
 	String moleculeParamsINFO = moleculeParamsINFOaux;
 	String moleculeParamsACK = moleculeParamsACKaux;	
@@ -437,7 +371,8 @@ PAS ACT = ACT PAS
 	map.put("useAcknowledgements", Integer.toString(useAcknowledgements));
 	map.put("decomposing", Integer.toString(decomposing));
 	map.put("numMessages", Integer.toString(numMessages));
-	map.put("numRetransmissions", Integer.toString(numRetransmissions));
+	map.put("numRetransmissionsINFO", Integer.toString(numRetransmissionsINFO));
+	map.put("numRetransmissionsACK", Integer.toString(numRetransmissionsACK));
 	map.put("retransmitWaitTime", Integer.toString(retransmitWaitTime));
 	map.put("decomposing", Integer.toString(decomposing));
 	
@@ -474,7 +409,7 @@ PAS ACT = ACT PAS
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		if(simStep<=retransmitWaitTime*numRetransmissions){SuccessRate++;}
+		if(simStep<=retransmitWaitTime*numRetransmissionsINFO){SuccessRate++;}
 		System.out.println("   " + i + " : " + simStep + " steps");
 		RTT += simStep;	
 	}	

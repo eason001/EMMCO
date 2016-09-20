@@ -184,7 +184,7 @@ public class NanoMachine {
 			this.nanoMachine = nm;
 			this.simulation = sim;
 			this.moleculeCreator = new MoleculeCreator(mpl, this.simulation, this.nanoMachine, this.molReleasePsn);
-			this.retransmissionsLeft =  this.simulation.getNumRetransmissions();
+			this.retransmissionsLeft =  this.simulation.getNumRetransmissionsINFO();
 		}
 
 		// in order to have intermediate nodes no retransmit multiple times for each molecule.
@@ -315,7 +315,7 @@ public class NanoMachine {
 			{
 				this.moleculeCreator = new MoleculeCreator(mpl, simulation, nanoMachine, molReleasePsn);
 				currMsgId = 0;
-				retransmissionsLeft =  this.simulation.getNumRetransmissions();
+				retransmissionsLeft =  this.simulation.getNumRetransmissionsACK();
 			}
 		}
 

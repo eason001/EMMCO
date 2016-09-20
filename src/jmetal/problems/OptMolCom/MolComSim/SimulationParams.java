@@ -23,6 +23,8 @@ public class SimulationParams {
 	private int numMessages = 1;
 	private int maxNumSteps = 100000;
 	private int numRetransmissions = 0;
+	private int numRetransmissionsINFO = 0;
+	private int numRetransmissionsACK = 0;
 	private int retransmitWaitTime = 100;
 	private boolean useCollisions = true;
 	private boolean decomposing = false;
@@ -73,7 +75,8 @@ public class SimulationParams {
 		
 		maxNumSteps = Integer.parseInt(map.get("maxSimulationStep"));
 		numMessages = Integer.parseInt(map.get("numMessages"));
-		numRetransmissions = Integer.parseInt(map.get("numRetransmissions"));
+		numRetransmissionsINFO = Integer.parseInt(map.get("numRetransmissionsINFO"));
+		numRetransmissionsACK = Integer.parseInt(map.get("numRetransmissionsACK"));
 		retransmitWaitTime = Integer.parseInt(map.get("retransmitWaitTime"));
 		
 		useCollisions = (Integer.parseInt(map.get("useCollisions")) == 1) ? true : false;
@@ -347,6 +350,14 @@ public class SimulationParams {
 		return numRetransmissions;
 	}
 
+	public int getNumRetransmissionsINFO() {
+		return numRetransmissionsINFO;
+	}
+	
+	public int getNumRetransmissionsACK() {
+		return numRetransmissionsACK;
+	}
+	
 	public int getRetransmitWaitTime() {
 		return retransmitWaitTime;
 	}

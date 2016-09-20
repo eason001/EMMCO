@@ -365,6 +365,14 @@ public class MolComSim {
 		return simParams.getNumRetransmissions();
 	}
 	
+	public int getNumRetransmissionsINFO() {
+		return simParams.getNumRetransmissionsINFO();
+	}
+	
+	public int getNumRetransmissionsACK() {
+		return simParams.getNumRetransmissionsACK();
+	}
+	
 	public boolean isUsingCollisions() {
 		return simParams.isUsingCollisions();
 	}
