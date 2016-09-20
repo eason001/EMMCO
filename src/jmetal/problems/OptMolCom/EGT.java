@@ -114,9 +114,11 @@ public class EGT extends Algorithm {
 		// Create the initial solutionSet
 		Solution newSolution;
 		for (int j = 0; j < maxPopulations; j++) {
+			System.out.println("population " + j);
 			populationList[j]= new SolutionSet(populationSize);
 			Pop_Index = j;
 			for (int i = 0; i < populationSize; i++) {
+				System.out.println("solutionset " + i);
 				newSolution = new Solution(problem_);
 				problem_.evaluate(newSolution);
 				problem_.evaluateConstraints(newSolution);
