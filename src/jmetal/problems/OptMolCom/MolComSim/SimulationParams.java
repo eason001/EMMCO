@@ -302,6 +302,7 @@ public class SimulationParams {
 
 	public ArrayList<MoleculeParams> getNoiseMoleculeParams() {
 		ArrayList<MoleculeParams> noiseMParams = new ArrayList<MoleculeParams>();
+	//	System.out.println("#molecules " + moleculeParams.size());
 		for (MoleculeParams mp : moleculeParams){
 			if (mp.getMoleculeType().equals(MoleculeType.NOISE)){
 				noiseMParams.add(mp);
@@ -316,6 +317,7 @@ public class SimulationParams {
 			if (mp.getMoleculeType().equals(MoleculeType.INFO)){
 				infoMParams.add(mp);
 			}
+			
 		}
 		return infoMParams;
 	}
@@ -325,7 +327,9 @@ public class SimulationParams {
 		for (MoleculeParams mp : moleculeParams){
 			if (mp.getMoleculeType().equals(MoleculeType.ACK)){
 				ackMParams.add(mp);
+			//	System.out.println("FINAL FINAL FINAL FINALFINAL FINALFINAL FINAL    " +  mp.getNumMolecules());
 			}
+			
 		}
 		return ackMParams;
 	}

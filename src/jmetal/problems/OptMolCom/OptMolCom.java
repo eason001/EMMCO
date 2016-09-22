@@ -69,7 +69,7 @@ public class OptMolCom extends Problem {
 	
 	String moleculeParamsINFOaux = " INFO ACTIVE 0"; // DV ACTIVE PASSIVE
 	String moleculeParamsACKaux = " ACK ACTIVE 0"; // DV
-	String moleculeParamsNOISE = "100000 NOISE"; // 0 100K 338K
+	String moleculeParamsNOISE = " 100000 NOISE"; // 0 100K 338K
 	String[] INFOlist = {" INFO ACTIVE 0"," INFO ACTIVE 0"," INFO ACTIVE 0"," INFO ACTIVE 0"," INFO ACTIVE 0"};
 	String[] ACKlist = {" ACK ACTIVE 0"," ACK ACTIVE 0"," ACK ACTIVE 0"," ACK ACTIVE 0"," ACK ACTIVE 0"};
 	
@@ -78,12 +78,13 @@ public class OptMolCom extends Problem {
 	public int n_objectives = 2;
 	public int n_constraints = 0;	
 	public int n_variables	= 6;
-	public int sim_run = 10; // 10
+	public int sim_run = 100; // 10
 	
 	public Random r  = new Random();
 	public int Low;
 	public int High;
 	
+	MolComSim mcs = new MolComSim();
 		//--------------------------------------------------------------------------------//
 
 	
@@ -164,7 +165,10 @@ public class OptMolCom extends Problem {
 	
 	Map<String,String> map = new HashMap<String,String>();
 	
-	String moleculeParams = "50";
+	String moleculeParamsINFOaux = " INFO ACTIVE 0"; // DV ACTIVE PASSIVE
+	String moleculeParamsACKaux = " ACK ACTIVE 0";
+	
+	String moleculeParams = "50"; //50
 	moleculeParamsINFOaux = moleculeParams + moleculeParamsINFOaux;
 	moleculeParamsACKaux = moleculeParams + moleculeParamsACKaux;
 	
@@ -322,6 +326,7 @@ PAS ACT = ACT PAS
         		break;
     		}
     		moleculeParamsACKaux = Integer.toString((int)str.getValue(4)) + moleculeParamsACKaux;
+    		
     		break;   		
     	default:
     		retransmitWaitTime = 100;
@@ -354,7 +359,9 @@ PAS ACT = ACT PAS
 	retransmitWaitTime = r.nextInt(High-Low) + Low;
 	
 	String moleculeParamsINFO = moleculeParamsINFOaux;
-	String moleculeParamsACK = moleculeParamsACKaux;	
+	String moleculeParamsACK = moleculeParamsACKaux;
+//	System.out.println("info " + moleculeParamsINFO);
+//	System.out.println("ack " + moleculeParamsACK);
 		
 	map.put("mediumDimensionX", Integer.toString(mediumDimensionX));
 	map.put("mediumDimensionY", Integer.toString(mediumDimensionY));
@@ -402,7 +409,7 @@ PAS ACT = ACT PAS
     //Calculate 2 objectives 
 	for(int i = 0 ; i < sim_run ; i ++){
 	
-		MolComSim mcs = new MolComSim();
+		//MolComSim mcs = new MolComSim();
 		try {
 			simStep = mcs.runSim(map);
 		} catch (IOException e) {

@@ -35,6 +35,7 @@ public class MoleculeCreator {
 			MoleculeType molType = mp.getMoleculeType();
 			MoleculeMovementType molMoveType = mp.getMoleculeMovementType();
 			mp.applyAdaptiveChange(lastTransmissionStatus); // make changes to num molecules based on communication success.
+		//	System.out.println("total molecules " + mp.getNumMolecules());
 			for (int i = 0; i < mp.getNumMolecules(); i++){
 				Molecule tempMol;
 				if (molType.equals(MoleculeType.ACK)){
