@@ -360,8 +360,8 @@ PAS ACT = ACT PAS
 	
 	String moleculeParamsINFO = moleculeParamsINFOaux;
 	String moleculeParamsACK = moleculeParamsACKaux;
-//	System.out.println("info " + moleculeParamsINFO);
-//	System.out.println("ack " + moleculeParamsACK);
+	System.out.println("info " + moleculeParamsINFO);
+	System.out.println("ack " + moleculeParamsACK);
 		
 	map.put("mediumDimensionX", Integer.toString(mediumDimensionX));
 	map.put("mediumDimensionY", Integer.toString(mediumDimensionY));

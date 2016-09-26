@@ -124,11 +124,7 @@ public class EGT_main {
     // Execute the Algorithm
     for (int j = 0; j < n_runs; j++) {
     	System.out.println("============== RUNS: " + j + " =================");
-<<<<<<< HEAD
      //   Rtest();
-=======
-      //  Rtest();
->>>>>>> multinode
     	algorithm.setInputParameter("runs",j);
 	    long initTime = System.currentTimeMillis();
 	    SolutionSet population = algorithm.execute();
