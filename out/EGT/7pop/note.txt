@@ -1,0 +1,22 @@
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: Total execution time: 13838702ms
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: Total execution time: 13838702ms
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: Variables values have been writen to file VAR
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: Objectives values have been writen to file FUN
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: Quality indicators
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: Hypervolume: 0.9904229999999999
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: GD         : 0.37604689894224846
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: IGD        : 0.7035087419499491
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: Spread     : 1.0
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: Epsilon    : 46.0
+Sep 22, 2016 11:43:02 PM jmetal.problems.OptMolCom.EGT_main main
+INFO: Speed      : 0 evaluations

@@ -112,14 +112,14 @@ public class EGT extends Algorithm {
 		selectionOperator = operators_.get("selection");
 
 		// Create the initial solutionSet
-		System.out.println("Creating initial populations");
+	//	System.out.println("Creating initial populations");
 		Solution newSolution;
 		for (int j = 0; j < maxPopulations; j++) {
-			System.out.println("  Population " + j );
+		//	System.out.println("  Population " + j );
 			populationList[j]= new SolutionSet(populationSize);
 			Pop_Index = j;
 			for (int i = 0; i < populationSize; i++) {
-				System.out.println("  SolutionSet " + i );
+		//		System.out.println("  SolutionSet " + i );
 				newSolution = new Solution(problem_);
 				problem_.evaluate(newSolution);
 				problem_.evaluateConstraints(newSolution);
@@ -129,7 +129,7 @@ public class EGT extends Algorithm {
 				//AuxPopulation[j].add(newSolution);
 			} //for   
 	     }
-		System.out.println("Creating initial populations Done~ ");
+	//	System.out.println("Creating initial populations Done~ ");
 		
 		
 		// Generations 
@@ -325,8 +325,8 @@ public class EGT extends Algorithm {
 	    	SolutionSet So2 = new SolutionSet(1);
 	    	So1.add(o1);
 	    	So2.add(o2);
-	        //return Integer.compare((int)indicators.getHypervolume(So1),(int)indicators.getHypervolume(So2));
-	        return Integer.compare((int)o1.getObjective(0),(int)o2.getObjective(0));
+	        return Integer.compare((int)indicators.getHypervolume(So1),(int)indicators.getHypervolume(So2));
+	        //return Integer.compare((int)o1.getObjective(0),(int)o2.getObjective(0));
 	    }
 	}
 	

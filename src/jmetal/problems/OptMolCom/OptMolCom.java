@@ -1,8 +1,8 @@
 
-//CloudOptimization.java
-//  Authors: Dung Phan
-//  <phdung@cs.ubm.edu>
-//  Copyright (c) 2013 DUNG PHAN
+//OptMolCom.java
+//  Authors: Yi Ren
+//  <yiren001@cs.ubm.edu>
+//  Copyright (c) 2016 Yi Ren Cheng
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Lesser General Public License as published by
 //  the Free Software Foundation, either version 3 of the License, or
@@ -405,7 +405,7 @@ PAS ACT = ACT PAS
         System.out.println(mentry.getValue());
      }
 	*/
-	System.out.println("start evaluating . . .");
+	//System.out.println("start evaluating . . .");
     //Calculate 2 objectives 
 	for(int i = 0 ; i < sim_run ; i ++){
 	
@@ -417,7 +417,7 @@ PAS ACT = ACT PAS
 			e.printStackTrace();
 		}
 		if(simStep<=retransmitWaitTime*numRetransmissionsINFO){SuccessRate++;}
-		System.out.println("   " + i + " : " + simStep + " steps");
+	//	System.out.println("   " + i + " : " + simStep + " steps");
 		RTT += simStep;	
 	}	
 	
