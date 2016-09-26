@@ -57,12 +57,19 @@ public class MolComSim {
 		//yet finished sending our messages, move the simulation forward
 		for(simStep=0; (simStep < simParams.getMaxNumSteps()) && (!lastMsgCompleted); simStep++) 
 		{
-			//System.out.println("steps: " + simStep);
+		//	System.out.println("steps: " + simStep);
+			int count = 0;
 			for(NanoMachine nm : nanoMachines){
+				//System.out.println("nanoMachines moves " + count);
 				nm.nextStep();
+				count++;
 			}
+			count=0;
+		//	System.out.println("Molecules size " + movingMolecules.size());
 			for(Molecule m : movingMolecules){
+			//	System.out.println("Molecules moves " + count);
 				m.move();
+				count++;
 			}
 			collectGarbage();
 		}
@@ -73,7 +80,7 @@ public class MolComSim {
 	public void startSim2(Map<String,String> args) throws IOException {
 		simStep = 0;
 		lastMsgCompleted = false;
-		simParams = new SimulationParams(args);
+		simParams = new SimulationParams(args); 
 		if((simParams.getOutputFileName() != null) && (!simParams.isBatchRun())) {
 			outputFile = new FileWriter(simParams.getOutputFileName());
 		}
@@ -167,6 +174,7 @@ public class MolComSim {
 		int medHeight = simParams.getMediumHeight();
 		int medWidth = simParams.getMediumWidth();
 		ArrayList<MoleculeParams> nMParams = simParams.getNoiseMoleculeParams();
+	//	System.out.println("#noise " + nMParams.size());
 		medium = new Medium(medLength, medHeight, medWidth, nMParams, this);
 		medium.createMolecules();
 	}
@@ -187,6 +195,7 @@ public class MolComSim {
 			transmitters.add(nm);
 			nanoMachines.add(nm);
 		}
+		//System.out.println("this is " + simParams.getReceiverParams().size());
 		for (NanoMachineParam nmp : simParams.getReceiverParams()) {
 			NanoMachine nm = NanoMachine.createReceiver(nmp.getCenter(), nmp.getRadius(), nmp.getMolReleasePoint(), ackParams, this);
 			growNanoMachine(nm); // adds NanoMachine to medium's grid
@@ -295,6 +304,7 @@ public class MolComSim {
 	 * @param mols List of molecules to add to simulation list
 	 */
 	public void addMolecules(ArrayList<Molecule> mols) {
+	//	System.out.println("#molecules to add " + mols.size());
 		for (Molecule mol : mols){
 			// Only add the molecules to the movingMolecules list if they do, in fact, move.
 			if(!(mol.getMovementController() instanceof NullMovementController)) {
@@ -363,6 +373,14 @@ public class MolComSim {
 
 	public int getNumRetransmissions() {
 		return simParams.getNumRetransmissions();
+	}
+	
+	public int getNumRetransmissionsINFO() {
+		return simParams.getNumRetransmissionsINFO();
+	}
+	
+	public int getNumRetransmissionsACK() {
+		return simParams.getNumRetransmissionsACK();
 	}
 	
 	public boolean isUsingCollisions() {

@@ -18,7 +18,9 @@ public class NoiseMoleculeCreator extends MoleculeCreator{
 	public void createMolecules() {
 		ArrayList<Molecule> noiseMolecules = new ArrayList<Molecule>();
 		//TODO: check these values to make sure they're not occupied
+		
 		for (MoleculeParams nmp : molParams){
+		//	System.out.println("#noise " + nmp.getNumMolecules());
 			for (int i = 0; i < nmp.getNumMolecules(); i++){
 				int mh = simulation.getSimParams().getMediumHeight();
 				int ml = simulation.getSimParams().getMediumLength();

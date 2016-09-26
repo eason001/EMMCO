@@ -33,13 +33,13 @@ import org.rosuda.REngine.Rserve.*;
 public class EGT_main {
   public static Logger      logger_ ;      // Logger object
   public static FileHandler fileHandler_ ; // FileHandler object
-  public static int n_runs = 3; // # sim runs
-  public static int n_gen = 10; // # generations
-  public static int n_pop = 3; // # nodes 7
+  public static int n_runs = 3; // # sim runs 3 
+  public static int n_gen = 50; // # generations 20 50
+  public static int n_pop = 7; // # nodes 7
   public static int n_obj = 2;
   public static int op = 10; //4:PD 5:HV 6:PD-HV 7:HVC 8:MM 9:PD-MM 10:HV-NoCons
-  public static int pop_size = 50;
-  public static double mutate_prob = 0.4;
+  public static int pop_size = 50; // 50
+  public static double mutate_prob = 0.2; //(1/v)
   public static double[][][] finalResults = new double[n_runs][n_gen][n_obj];
   public static double[][] max = new double[n_gen][n_obj];
   public static double[][] min = new double[n_gen][n_obj];
@@ -124,7 +124,11 @@ public class EGT_main {
     // Execute the Algorithm
     for (int j = 0; j < n_runs; j++) {
     	System.out.println("============== RUNS: " + j + " =================");
+<<<<<<< HEAD
      //   Rtest();
+=======
+      //  Rtest();
+>>>>>>> multinode
     	algorithm.setInputParameter("runs",j);
 	    long initTime = System.currentTimeMillis();
 	    SolutionSet population = algorithm.execute();

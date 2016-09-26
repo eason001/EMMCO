@@ -53,6 +53,7 @@ public class NanoMachine {
 	 */
 	public static NanoMachine createReceiver(Position position, int radius, Position molReleasePsn, ArrayList<MoleculeParams> mpl, MolComSim sim) {
 		NanoMachine retVal = new NanoMachine(position, radius);
+	//	System.out.println("createReceiver " + mpl.get(0).getNumMolecules());
 		retVal.rx = new Receiver(retVal, molReleasePsn, mpl, sim);
 		retVal.tx = null;
 		return retVal;
@@ -73,6 +74,7 @@ public class NanoMachine {
 			Position infoMolReleasePsn, Position ackMolReleasePsn, ArrayList<MoleculeParams> mpl, 
 			ArrayList<MoleculeParams> ackParams, MolComSim sim) {
 		NanoMachine retVal = new NanoMachine(position, radius);
+	//	System.out.println("createIntermediateReceiver mpl " + mpl.get(0).getNumMolecules() + " ackParams " + ackParams.get(0).getNumMolecules());
 		retVal.rx = new Receiver(retVal, ackMolReleasePsn, ackParams, sim); // ERROR?! instead of mpl it should be ackparams...?!
 		retVal.tx = new Transmitter(retVal, infoMolReleasePsn, mpl, sim);
 		retVal.tx.setNumRetransmissions(0);
@@ -183,8 +185,9 @@ public class NanoMachine {
 			this.molReleasePsn = molReleasePsn;
 			this.nanoMachine = nm;
 			this.simulation = sim;
+		//	System.out.println("Tx molecules " + mpl.get(0).getNumMolecules());
 			this.moleculeCreator = new MoleculeCreator(mpl, this.simulation, this.nanoMachine, this.molReleasePsn);
-			this.retransmissionsLeft =  this.simulation.getNumRetransmissions();
+			this.retransmissionsLeft =  this.simulation.getNumRetransmissionsINFO();
 		}
 
 		// in order to have intermediate nodes no retransmit multiple times for each molecule.
@@ -313,9 +316,10 @@ public class NanoMachine {
 			this.simulation = sim;
 			if(this.simulation.isUsingAcknowledgements())
 			{
+		//		System.out.println("Receiver molecules " + mpl.get(0).getNumMolecules());
 				this.moleculeCreator = new MoleculeCreator(mpl, simulation, nanoMachine, molReleasePsn);
 				currMsgId = 0;
-				retransmissionsLeft =  this.simulation.getNumRetransmissions();
+				retransmissionsLeft =  this.simulation.getNumRetransmissionsACK();
 			}
 		}
 

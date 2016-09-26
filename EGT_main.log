@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052689</millis>
+  <sequence>0</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time: 13608550ms</message>
+</record>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052846</millis>
+  <sequence>1</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time: 13608550ms</message>
+</record>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052846</millis>
+  <sequence>2</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Variables values have been writen to file VAR</message>
+</record>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052846</millis>
+  <sequence>3</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Objectives values have been writen to file FUN</message>
+</record>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052846</millis>
+  <sequence>4</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Quality indicators</message>
+</record>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052861</millis>
+  <sequence>5</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Hypervolume: 0.9905225000000001</message>
+</record>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052870</millis>
+  <sequence>6</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>GD         : 0.3760576459284195</message>
+</record>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052870</millis>
+  <sequence>7</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>IGD        : 0.7035439325301583</message>
+</record>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052889</millis>
+  <sequence>8</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Spread     : 1.0</message>
+</record>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052889</millis>
+  <sequence>9</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Epsilon    : 45.0</message>
+</record>
+<record>
+  <date>2016-09-22T16:10:52</date>
+  <millis>1474575052889</millis>
+  <sequence>10</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Speed      : 0 evaluations</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344168</millis>
+  <sequence>11</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time: 13291279ms</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344168</millis>
+  <sequence>12</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time: 13291279ms</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344171</millis>
+  <sequence>13</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Variables values have been writen to file VAR</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344174</millis>
+  <sequence>14</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Objectives values have been writen to file FUN</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344174</millis>
+  <sequence>15</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Quality indicators</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344174</millis>
+  <sequence>16</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Hypervolume: 0.9904229999999999</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344174</millis>
+  <sequence>17</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>GD         : 0.37600910404740284</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344174</millis>
+  <sequence>18</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>IGD        : 0.7034733914655196</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344174</millis>
+  <sequence>19</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Spread     : 1.0000334937146431</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344174</millis>
+  <sequence>20</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Epsilon    : 46.0</message>
+</record>
+<record>
+  <date>2016-09-22T19:52:24</date>
+  <millis>1474588344174</millis>
+  <sequence>21</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Speed      : 0 evaluations</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182891</millis>
+  <sequence>22</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time: 13838702ms</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182891</millis>
+  <sequence>23</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Total execution time: 13838702ms</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182891</millis>
+  <sequence>24</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Variables values have been writen to file VAR</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182907</millis>
+  <sequence>25</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Objectives values have been writen to file FUN</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182910</millis>
+  <sequence>26</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Quality indicators</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182910</millis>
+  <sequence>27</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Hypervolume: 0.9904229999999999</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182910</millis>
+  <sequence>28</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>GD         : 0.37604689894224846</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182910</millis>
+  <sequence>29</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>IGD        : 0.7035087419499491</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182910</millis>
+  <sequence>30</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Spread     : 1.0</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182910</millis>
+  <sequence>31</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Epsilon    : 46.0</message>
+</record>
+<record>
+  <date>2016-09-22T23:43:02</date>
+  <millis>1474602182910</millis>
+  <sequence>32</sequence>
+  <logger>jMetal</logger>
+  <level>INFO</level>
+  <class>jmetal.problems.OptMolCom.EGT_main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Speed      : 0 evaluations</message>
+</record>
+</log>
